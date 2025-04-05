@@ -1,25 +1,44 @@
-# 🌟 Desafio Final | Módulo 1 - Front-end com React + Sass Modularizado 🌟
+# 📘 Desafio 2 | Módulo de Back-end - API de Livros com Flask
 
-Este projeto foi desenvolvido como parte do **Desafio Final do Módulo 1** do curso, com foco em criação de interfaces modernas utilizando **React** e **Sass Modularizado**. É a etapa essencial para demonstrar os conhecimentos adquiridos ao longo do módulo de front-end.
-
----
-
-## 👨‍💻 Descrição
-
-A proposta do desafio foi desenvolver uma aplicação de doação de livros seguindo fielmente o layout disponibilizado no Figma. Este projeto serve como base para o back-end que será desenvolvido no Módulo 2, sendo obrigatório para dar continuidade no curso.
+Este projeto foi desenvolvido como parte do **segundo desafio do Módulo de Back-end** do curso. O objetivo é criar uma API RESTful utilizando **Flask** e **SQLite** para cadastrar e listar livros, aplicando boas práticas de desenvolvimento web e manipulação de banco de dados.
 
 ---
 
-## 🎨 Layout da Aplicação
+## 🚀 Descrição do Projeto
 
-O design da aplicação está disponível no Figma do curso.
+A API desenvolvida permite:
+
+- 📥 **Cadastrar um livro** no banco de dados via rota `POST /doar`
+- 📚 **Listar todos os livros** cadastrados via rota `GET /livros`
+- 🏠 **Exibir uma página inicial personalizada** via rota `GET /`
+
+Essa é uma aplicação simples, porém completa, que simula a construção de uma API real com banco de dados e boas práticas estruturais.
+
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ⚙️ Requisitos Técnicos
 
-- React
-- Sass (Modularizado)
-- HTML5
-- JavaScript (ES6+)
-- CSS Modules
-- Git & GitHub
+- ✅ Utilização do **Flask** para criação das rotas
+- ✅ Banco de dados **SQLite** com uma tabela chamada `LIVROS`
+- ✅ Rotas criadas:
+  - `POST /doar` → cadastra um novo livro
+  - `GET /livros` → lista todos os livros cadastrados
+  - `GET /` → exibe uma mensagem personalizada
+- ✅ Retorno em **JSON** para todas as respostas
+- ✅ Resposta com código **HTTP 201** ao cadastrar novo livro
+- ✅ Organização e boas práticas de código
+
+---
+
+## 🗃️ Estrutura do Banco de Dados
+
+A tabela `LIVROS` contém os seguintes campos:
+
+| Campo        | Tipo   | Descrição                      |
+|--------------|--------|--------------------------------|
+| `id`         | int    | Chave primária, autoincremento |
+| `titulo`     | texto  | Título do livro (obrigatório)  |
+| `categoria`  | texto  | Categoria (obrigatório)        |
+| `autor`      | texto  | Nome do autor (obrigatório)    |
+| `imagem_url` | texto  | URL da imagem (obrigatório)    |
+
