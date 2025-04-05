@@ -5,22 +5,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);
-
+    background: linear-gradient(90deg, rgba(0,27,47,1) 0%, rgba(0,86,149,1) 88%);
 }
+
 .boxLogo{
-   width: 23vw;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   h1{
+   
+    width: 23vw;
+    display: flex;
     color: white;
-    font-size: 25px;
-   }
+    align-items: center;
+    height: 14vh;
+    justify-content: space-evenly;
 }
 
 .boxMenu{
-   
+    
     width: 35vw;
     ul{
         display: flex;
@@ -36,73 +35,72 @@ header{
 .boxInput{
     border: solid 2px white;
     width: 17vw;
-    margin-right: 20px;
     height: 6vh;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
     input{
-        outline: none;
+        width: 12vw;
         background-color: transparent;
+        outline: none;
         border: none;
         color: white;
         font-size: 15px;
-        padding-left: 6px;
-        width: 12vw;
         &::placeholder{
             color: white;
         }
     }
 }
 
-@media(max-width: 1170px){
+@media(max-width: 1134px){
 
     .boxLogo{
-        // border: solid 2px red;
+        
         width: 25vw;
         h1{
-            font-size: 2vw;
+            font-size: 1.9vw;
         }
         img{
             width: 5vw;
         }
     }
+
+    .boxMenu{
+        
+        ul{   
+            font-size: 1.7vw;
+        }
+    }
+
     .boxInput{
+        width: 18vw;
         input{
-            &::placeholder{
-                font-size: 1.1vw;
-            }
-        }      
+        &::placeholder{
+          font-size: 1.2vw;
+        }
     }
-
-   .boxMenu{
-    // border: solid 2px yellow;
-    ul{
-    font-size: 1.6vw;
     }
-   } 
-
 }
 
-@media(max-width: 780px){
+@media(max-width: 760px){
     header{
-        flex-direction: column;
         height: 25vh;
+        flex-direction: column;
         justify-content: space-evenly;
     }
-
     .boxInput{
         display: none;
     }
-
     .boxLogo{
         width: 80%;
+        
         h1{
             font-size: 25px;
         }
         img{
-            width: 70px;
+            width: 60px;
         }
     }
 
@@ -110,7 +108,7 @@ header{
         width: 100%;
         ul{
             justify-content: space-evenly;
-            font-size: 21px;
+            font-size: 22px;
         }
     }
 }

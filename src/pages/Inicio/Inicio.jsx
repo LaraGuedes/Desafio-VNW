@@ -1,14 +1,13 @@
 import S from './inicio.module.scss'
+import balance from '../../assets/balance.png'
 import read from '../../assets/read.png'
 import network from '../../assets/network.png'
-import balance from '../../assets/balance.png'
 import transform from '../../assets/transform.png'
-
 
 export default function Inicio(){
     return(
         <main>
-            <section className={S.post}>
+            <section className={S.banner}>
                 <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
             </section>
             <section className={S.devoDoar}>
