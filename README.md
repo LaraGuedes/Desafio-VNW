@@ -27,9 +27,7 @@ A aplicação tem como principal funcionalidade **exibir** e **cadastrar livros*
 
 ## 🎨 Layout da Aplicação
 
-O layout utilizado foi baseado na proposta disponível no Figma:
-
-🔗 [Figma - Proposta Empower](https://www.figma.com/design/MDGn9uI2Ny5Y8sOJWnmfRp/Proposta-Empower?node-id=0-1&node-type=canvas&t=EndtmH2witkacjOy-0)
+O layout utilizado foi baseado na proposta disponível no Figma do curso.
 
 ---
 
